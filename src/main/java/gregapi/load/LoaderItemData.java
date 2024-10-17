@@ -819,6 +819,19 @@ public class LoaderItemData implements Runnable {
 		OM.reg(OD.slimeballSwet                     , ST.make(MD.AETHER, "swetJelly", 1, 1));
 		OM.reg(OD.slimeballSwet                     , ST.make(MD.AETHER, "swetJelly", 1, 2));
 		OM.reg(OD.itemFeather                       , ST.make(MD.AETHER, "goldenFeather", 1, 0));
+		OM.reg("cropBerry"                          , ST.make(MD.AETHER_LEGACY, "enchantedBerry", 1, 0));
+		OM.reg("cropStrawberry"                     , ST.make(MD.AETHER_LEGACY, "rainbowStrawberry", 1, 0));
+		OM.reg("cropWyndberry"                      , ST.make(MD.AETHER_LEGACY, "wyndberry", 1, 0));
+		OM.reg("cropBlueberry"                      , ST.make(MD.AETHER_LEGACY, "blueBerry", 1, 0));
+		OM.reg("cropOrange"                         , ST.make(MD.AETHER_LEGACY, "orange", 1, 0));
+		OM.reg(OD.itemEgg                           , ST.make(MD.AETHER_LEGACY, "moaEgg", 1, W));
+		OM.reg(OD.slimeball                         , ST.make(MD.AETHER_LEGACY, "swetJelly", 1, 0));
+		OM.reg(OD.slimeball                         , ST.make(MD.AETHER_LEGACY, "swetJelly", 1, 1));
+		OM.reg(OD.slimeball                         , ST.make(MD.AETHER_LEGACY, "swetJelly", 1, 2));
+		OM.reg(OD.slimeballSwet                     , ST.make(MD.AETHER_LEGACY, "swetJelly", 1, 0));
+		OM.reg(OD.slimeballSwet                     , ST.make(MD.AETHER_LEGACY, "swetJelly", 1, 1));
+		OM.reg(OD.slimeballSwet                     , ST.make(MD.AETHER_LEGACY, "swetJelly", 1, 2));
+		OM.reg(OD.itemFeather                       , ST.make(MD.AETHER_LEGACY, "goldenFeather", 1, 0));
 		OM.reg(OP.ingot.dat(MT.WaxBee)              , ST.make(MD.GrC_Bees, "grcbees.BeesWax", 1, 0));
 		OM.reg(OP.ingot.dat(MT.WaxBee)              , ST.make(MD.GrC_Bees, "grcbees.BeesWax", 1, 1));
 		OM.reg(OP.ingot.dat(MT.WaxBee)              , ST.make(MD.GrC_Bees, "grcbees.BeesWax", 1, 2));
@@ -1221,7 +1234,18 @@ public class LoaderItemData implements Runnable {
 			OM.reg(OP.stone, MT.STONES.Holystone                , ST.make(MD.AETHER, "holystoneHeadstone"       , 1, 0));
 			OM.reg(OP.stone, MT.STONES.Holystone                , ST.make(MD.AETHER, "holystoneHighlight"       , 1, 0));
 		}
-		
+
+		if (MD.AETHER_LEGACY.mLoaded) {
+			OM.reg(OP.stone, MT.STONES.Holystone                , ST.make(MD.AETHER_LEGACY, "holystone"                , 1, 0));
+			OM.reg(OP.stone, MT.STONES.Holystone                , ST.make(MD.AETHER_LEGACY, "holystone"                , 1, 1));
+			OM.reg(OP.stone, MT.STONES.Holystone                , ST.make(MD.AETHER_LEGACY, "holystone"                , 1, 2));
+			OM.reg(OP.stone, MT.STONES.Holystone                , ST.make(MD.AETHER_LEGACY, "holystone"                , 1, 3));
+			OM.reg(OP.stone, MT.STONES.Holystone                , ST.make(MD.AETHER_LEGACY, "holystoneBrick"           , 1, 0));
+			OM.reg(OP.stone, MT.STONES.Holystone                , ST.make(MD.AETHER_LEGACY, "holystoneKeystone"        , 1, 0));
+			OM.reg(OP.stone, MT.STONES.Holystone                , ST.make(MD.AETHER_LEGACY, "holystoneHeadstone"       , 1, 0));
+			OM.reg(OP.stone, MT.STONES.Holystone                , ST.make(MD.AETHER_LEGACY, "holystoneHighlight"       , 1, 0));
+		}
+
 		if (MD.HBM.mLoaded) {
 			BlocksGT.sDontGenerateOresIn.add(ST.make(MD.HBM, "tile.moon_turf", 1, 0));
 			
@@ -2012,8 +2036,17 @@ public class LoaderItemData implements Runnable {
 		OM.data(MD.AETHER, "skyrootDoorItem"                , 1,   W, MT.Skyroot            ,  U * 6);
 		OM.data(MD.AETHER, "skyrootBookshelf"               , 1,   W, MT.Skyroot            ,  U * 6, MT.Paper, U * 9);
 		OM.data(MD.AETHER, "skyrootChest"                   , 1,   W, MT.Skyroot            ,  U * 8);
-		
-		
+
+		OM.data(MD.AETHER_LEGACY, "skyrootSignItem"                , 1,   W, MT.Skyroot            ,  U6*13);
+		OM.data(MD.AETHER_LEGACY, "skyrootFenceGate"               , 1,   W, MT.Skyroot            ,  U * 4);
+		OM.data(MD.AETHER_LEGACY, "skyrootBedItem"                 , 1,   W, MT.Skyroot            ,  U * 3);
+		OM.data(MD.AETHER_LEGACY, "skyrootTrapDoor"                , 1,   W, MT.Skyroot            ,  U * 3);
+		OM.data(MD.AETHER_LEGACY, "skyrootCraftingTable"           , 1,   W, MT.Skyroot            ,  U * 4);
+		OM.data(MD.AETHER_LEGACY, "skyrootDoorItem"                , 1,   W, MT.Skyroot            ,  U * 6);
+		OM.data(MD.AETHER_LEGACY, "skyrootBookshelf"               , 1,   W, MT.Skyroot            ,  U * 6, MT.Paper, U * 9);
+		OM.data(MD.AETHER_LEGACY, "skyrootChest"                   , 1,   W, MT.Skyroot            ,  U * 8);
+
+
 		OM.data(MD.HaC, "turkeyrawItem"                     , 1,   W, MT.MeatRaw            ,  U * 3, MT.Bone,  U4);
 		OM.data(MD.HaC, "turkeycookedItem"                  , 1,   W, MT.MeatCooked         ,  U * 3, MT.Bone,  U4);
 		OM.data(MD.HaC, "rabbitrawItem"                     , 1,   W, MT.MeatRaw            ,  U * 1, MT.Bone,  U4);

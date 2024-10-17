@@ -263,6 +263,9 @@ public class Loader_Ores implements Runnable {
 		if (MD.AETHER.mLoaded) {
 		rockset(MD.AETHER, "holystone", 1, 0, "holystone"         , 1, "aether.holystone"       , OP.oreHolystone           , MT.STONES.Holystone);
 		}
+		if (MD.AETHER_LEGACY.mLoaded) {
+			rockset(MD.AETHER_LEGACY, "holystone", 1, 0, "holystone"         , 1, "aether.holystone"       , OP.oreHolystone           , MT.STONES.Holystone);
+		}
 		if (MD.ERE.mLoaded) {
 		rockset(MD.ERE, "umberstone", 0, 0, "umberstone"          , 1, "erebus.umberstone"      , OP.oreUmberstone          , MT.STONES.Umber);
 		rockset(MD.ERE, "umberGravel"                             , 0, "erebus.umbergravel"     , OP.oreUmberstone          , MT.STONES.Umber, 1, 1, 0, T, F, F);

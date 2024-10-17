@@ -253,6 +253,9 @@ public class LoaderBookList implements Runnable {
 		if (MD.AETHER.mLoaded) {
 			BooksGT.BOOK_REGISTER  .put(MD.AETHER, "bronzeKey"                        ,   W, (byte)  1);
 		}
+		if (MD.AETHER_LEGACY.mLoaded) {
+			BooksGT.BOOK_REGISTER  .put(MD.AETHER_LEGACY, "bronzeKey"                        ,   W, (byte)  1);
+		}
 		if (MD.IHL.mLoaded) {
 			BooksGT.BOOKS_NORMAL   .add(MD.IHL, "guidebook"                           ,   W);
 			BooksGT.BOOK_REGISTER  .put(MD.IHL, "guidebook"                           ,   W, (byte) 48);

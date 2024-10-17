@@ -64,7 +64,7 @@ public class MultiTileEntityMiniPortalAether extends MultiTileEntityMiniPortal {
 	@Override
 	public void findTargetPortal() {
 		mTarget = null;
-		if (MD.AETHER.mLoaded && worldObj != null && isServerSide()) {
+		if (MD.AETHER.mLoaded || MD.AETHER_LEGACY.mLoaded && worldObj != null && isServerSide()) {
 			if (worldObj.provider.dimensionId == DIM_OVERWORLD) {
 				long tShortestDistance = 128*128;
 				for (MultiTileEntityMiniPortal tTarget : sListAetherSide) if (tTarget != this && !tTarget.isDead()) {
@@ -95,7 +95,7 @@ public class MultiTileEntityMiniPortalAether extends MultiTileEntityMiniPortal {
 	
 	@Override
 	public void addThisPortalToLists() {
-		if (MD.AETHER.mLoaded && worldObj != null && isServerSide()) {
+		if (MD.AETHER.mLoaded || MD.AETHER_LEGACY.mLoaded && worldObj != null && isServerSide()) {
 			if (worldObj.provider.dimensionId == DIM_OVERWORLD) {
 				if (!sListWorldSide.contains(this)) sListWorldSide.add(this);
 				for (MultiTileEntityMiniPortal tPortal : sListAetherSide) tPortal.findTargetPortal();

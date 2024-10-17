@@ -2629,7 +2629,13 @@ public class MT {
 			Ambrosium               .put(MD.AETHER, COMMON_ORE).visDefault();
 			Gravitite               .put(MD.AETHER, COMMON_ORE).visDefault();
 			Continuum               .put(MD.AETHER, COMMON_ORE).visDefault();
-			
+
+			Skyroot                 .put(MD.AETHER_LEGACY).visDefault();
+			STONES.Holystone        .put(MD.AETHER_LEGACY).visDefault();
+			Zanite                  .put(MD.AETHER_LEGACY, COMMON_ORE).visDefault();
+			Ambrosium               .put(MD.AETHER_LEGACY, COMMON_ORE).visDefault();
+			Gravitite               .put(MD.AETHER_LEGACY, COMMON_ORE).visDefault();
+			Continuum               .put(MD.AETHER_LEGACY, COMMON_ORE).visDefault();
 			
 			W                       .put(MD.RP); // don't COMMON_ORE this!
 			Ag                      .put(MD.RP, COMMON_ORE);

@@ -66,7 +66,9 @@ public class MD {
 	, ERE               = new ModData(ModIDs.ERE                , "Erebus")
 	, ATUM              = new ModData(ModIDs.ATUM               , "Atum")
 	, BTL               = new ModData(ModIDs.BTL                , "The Betweenlands")
-	, AETHER            = new ModData(ModIDs.AETHER             , "The Aether")
+	, AETHER            = new ModData(ModIDs.AETHER             , "Aether II")
+			, AETHER_LEGACY            = new ModData(ModIDs.AETHER_LEGACY             , "Aether Legacy")
+
 	, TROPIC            = new ModData(ModIDs.TROPIC             , "Tropicraft")
 	, MYST              = new ModData(ModIDs.MYST               , "Mystcraft")
 	, WARPBOOK          = new ModData(ModIDs.WARPBOOK           , "Warpbook")

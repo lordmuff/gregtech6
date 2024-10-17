@@ -1103,6 +1103,16 @@ public class LoaderUnificationTargets implements Runnable {
 		OreDictManager.INSTANCE.setTarget(OP.blockGem       , MT.Zanite                 , MD.AETHER, "zaniteBlock"   , 0);
 		OreDictManager.INSTANCE.setTarget(OP.blockGem       , MT.Continuum              , MD.AETHER, "continuumBomb" , 0);
 		OreDictManager.INSTANCE.setTarget(OP.stick          , MT.Skyroot                , MD.AETHER, "skyrootStick"  , 0);
+		OreDictManager.INSTANCE.setTarget(OP.oreHolystone   , MT.Zanite                 , MD.AETHER_LEGACY, "zaniteOre"     , 0);
+		OreDictManager.INSTANCE.setTarget(OP.oreHolystone   , MT.Ambrosium              , MD.AETHER_LEGACY, "ambrosiumOre"  , 0);
+		OreDictManager.INSTANCE.setTarget(OP.oreHolystone   , MT.Gravitite              , MD.AETHER_LEGACY, "gravititeOre"  , 0);
+		OreDictManager.INSTANCE.setTarget(OP.oreHolystone   , MT.Continuum              , MD.AETHER_LEGACY, "continuumOre"  , 0);
+		OreDictManager.INSTANCE.setTarget(OP.gem            , MT.Zanite                 , MD.AETHER_LEGACY, "zaniteGemstone", 0);
+		OreDictManager.INSTANCE.setTarget(OP.gem            , MT.Ambrosium              , MD.AETHER_LEGACY, "ambrosiumShard", 0);
+		OreDictManager.INSTANCE.setTarget(OP.gem            , MT.Continuum              , MD.AETHER_LEGACY, "continuumOrb"  , 0);
+		OreDictManager.INSTANCE.setTarget(OP.blockGem       , MT.Zanite                 , MD.AETHER_LEGACY, "zaniteBlock"   , 0);
+		OreDictManager.INSTANCE.setTarget(OP.blockGem       , MT.Continuum              , MD.AETHER_LEGACY, "continuumBomb" , 0);
+		OreDictManager.INSTANCE.setTarget(OP.stick          , MT.Skyroot                , MD.AETHER_LEGACY, "skyrootStick"  , 0);
 		OreDictManager.INSTANCE.setTarget(OP.cell           , MT.Creosote               , MD.RC, "fluid.creosote.cell", 1);
 		OreDictManager.INSTANCE.setTarget(OP.stick          , MT.Bamboo                 , MD.PMP, "bambooAsperPole", 0);
 		OreDictManager.INSTANCE.setTarget(OP.stick          , MT.Bamboo                 , MD.PMP, "bambooFargesiaRobustaPole", 0);
